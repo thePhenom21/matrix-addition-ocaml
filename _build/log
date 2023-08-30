@@ -1,0 +1,117 @@
+# dune exec ./hello.exe
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/can/projects/dream_server
+# Auto-detected concurrency: 16
+$ /home/can/.opam/5.0.0/bin/ocamlc.opt -config > /tmp/dune_96edc5_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/home/can/.opam/5.0.0/bin"
+#  ; ocaml = Ok External "/home/can/.opam/5.0.0/bin/ocaml"
+#  ; ocamlc = External "/home/can/.opam/5.0.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/home/can/.opam/5.0.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/home/can/.opam/5.0.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/home/can/.opam/5.0.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/home/can/.opam/5.0.0/lib/ocaml:/home/can/.opam/5.0.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/home/can/.opam/5.0.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/home/can/projects/dream_server"
+#        ; "INSIDE_DUNE" : "/home/can/projects/dream_server/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/can/projects/dream_server/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/can/projects/dream_server/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/can/projects/dream_server/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/home/can/.opam/5.0.0/lib/ocaml"
+#      ; External "/home/can/.opam/5.0.0/lib"
+#      ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "5.0.0"
+#      ; standard_library_default = "/home/can/.opam/5.0.0/lib/ocaml"
+#      ; standard_library = "/home/can/.opam/5.0.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X032"
+#      ; cmi_magic_number = "Caml1999I032"
+#      ; cmo_magic_number = "Caml1999O032"
+#      ; cma_magic_number = "Caml1999A032"
+#      ; cmx_magic_number = "Caml1999Y032"
+#      ; cmxa_magic_number = "Caml1999Z032"
+#      ; ast_impl_magic_number = "Caml1999M032"
+#      ; ast_intf_magic_number = "Caml1999N032"
+#      ; cmxs_magic_number = "Caml1999D032"
+#      ; cmt_magic_number = "Caml1999T032"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/.sandbox/373d8518e5292a11b9408dac0290ea6b/default && .ppx/bcab0be011c28261c514e69f4fe141f8/ppx.exe -o hello.pp.ml --impl hello.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /home/can/.opam/5.0.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I .hello.eobjs/byte -I .hello.eobjs/native -I /home/can/.opam/5.0.0/lib/angstrom -I /home/can/.opam/5.0.0/lib/base64 -I /home/can/.opam/5.0.0/lib/base64/rfc2045 -I /home/can/.opam/5.0.0/lib/bigarray-overlap -I /home/can/.opam/5.0.0/lib/bigstringaf -I /home/can/.opam/5.0.0/lib/bytes -I /home/can/.opam/5.0.0/lib/caqti -I /home/can/.opam/5.0.0/lib/caqti-lwt -I /home/can/.opam/5.0.0/lib/cstruct -I /home/can/.opam/5.0.0/lib/digestif/c -I /home/can/.opam/5.0.0/lib/dream -I /home/can/.opam/5.0.0/lib/dream-httpaf -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-gluten -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-gluten-lwt -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-gluten-lwt-unix -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-h2 -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-h2-lwt -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-h2-lwt-unix -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-hpack -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-httpaf_ -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-httpaf_-lwt -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-httpaf_-lwt-unix -I /home/can/.opam/5.0.0/lib/dream-httpaf/dream-websocketaf -I /home/can/.opam/5.0.0/lib/dream-pure -I /home/can/.opam/5.0.0/lib/dream/certificate -I /home/can/.opam/5.0.0/lib/dream/cipher -I /home/can/.opam/5.0.0/lib/dream/graphiql -I /home/can/.opam/5.0.0/lib/dream/graphql -I /home/can/.opam/5.0.0/lib/dream/http -I /home/can/.opam/5.0.0/lib/dream/server -I /home/can/.opam/5.0.0/lib/dream/sql -I /home/can/.opam/5.0.0/lib/dream/unix -I /home/can/.opam/5.0.0/lib/duration -I /home/can/.opam/5.0.0/lib/eqaf -I /home/can/.opam/5.0.0/lib/eqaf/bigstring -I /home/can/.opam/5.0.0/lib/eqaf/cstruct -I /home/can/.opam/5.0.0/lib/faraday -I /home/can/.opam/5.0.0/lib/faraday-lwt -I /home/can/.opam/5.0.0/lib/faraday-lwt-unix -I /home/can/.opam/5.0.0/lib/fmt -I /home/can/.opam/5.0.0/lib/graphql -I /home/can/.opam/5.0.0/lib/graphql-lwt -I /home/can/.opam/5.0.0/lib/graphql_parser -I /home/can/.opam/5.0.0/lib/hmap -I /home/can/.opam/5.0.0/lib/ke -I /home/can/.opam/5.0.0/lib/logs -I /home/can/.opam/5.0.0/lib/lwt -I /home/can/.opam/5.0.0/lib/lwt/unix -I /home/can/.opam/5.0.0/lib/lwt_ssl -I /home/can/.opam/5.0.0/lib/magic-mime -I /home/can/.opam/5.0.0/lib/mirage-clock -I /home/can/.opam/5.0.0/lib/mirage-crypto -I /home/can/.opam/5.0.0/lib/mirage-crypto-rng -I /home/can/.opam/5.0.0/lib/mirage-crypto-rng-lwt -I /home/can/.opam/5.0.0/lib/mirage-crypto-rng/unix -I /home/can/.opam/5.0.0/lib/mtime -I /home/can/.opam/5.0.0/lib/mtime/clock/os -I /home/can/.opam/5.0.0/lib/multipart_form -I /home/can/.opam/5.0.0/lib/multipart_form-lwt -I /home/can/.opam/5.0.0/lib/ocaml/str -I /home/can/.opam/5.0.0/lib/ocaml/threads -I /home/can/.opam/5.0.0/lib/ocaml/unix -I /home/can/.opam/5.0.0/lib/ocplib-endian -I /home/can/.opam/5.0.0/lib/ocplib-endian/bigstring -I /home/can/.opam/5.0.0/lib/pecu -I /home/can/.opam/5.0.0/lib/prettym -I /home/can/.opam/5.0.0/lib/psq -I /home/can/.opam/5.0.0/lib/ptime -I /home/can/.opam/5.0.0/lib/ptime/clock/os -I /home/can/.opam/5.0.0/lib/re -I /home/can/.opam/5.0.0/lib/result -I /home/can/.opam/5.0.0/lib/rresult -I /home/can/.opam/5.0.0/lib/seq -I /home/can/.opam/5.0.0/lib/ssl -I /home/can/.opam/5.0.0/lib/stringext -I /home/can/.opam/5.0.0/lib/unstrctrd -I /home/can/.opam/5.0.0/lib/unstrctrd/parser -I /home/can/.opam/5.0.0/lib/uri -I /home/can/.opam/5.0.0/lib/uutf -I /home/can/.opam/5.0.0/lib/yojson -intf-suffix .ml -no-alias-deps -opaque -o .hello.eobjs/native/dune__exe__Hello.cmx -c -impl hello.pp.ml)
+$ (cd _build/default && /home/can/.opam/5.0.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o hello.exe /home/can/.opam/5.0.0/lib/yojson/yojson.cmxa /home/can/.opam/5.0.0/lib/bigstringaf/bigstringaf.cmxa -I /home/can/.opam/5.0.0/lib/bigstringaf /home/can/.opam/5.0.0/lib/angstrom/angstrom.cmxa /home/can/.opam/5.0.0/lib/logs/logs.cmxa /home/can/.opam/5.0.0/lib/ptime/ptime.cmxa /home/can/.opam/5.0.0/lib/stringext/stringext.cmxa /home/can/.opam/5.0.0/lib/uri/uri.cmxa /home/can/.opam/5.0.0/lib/ocaml/unix/unix.cmxa /home/can/.opam/5.0.0/lib/caqti/caqti.cmxa /home/can/.opam/5.0.0/lib/lwt/lwt.cmxa /home/can/.opam/5.0.0/lib/logs/logs_lwt.cmxa /home/can/.opam/5.0.0/lib/ocplib-endian/ocplib_endian.cmxa /home/can/.opam/5.0.0/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cmxa /home/can/.opam/5.0.0/lib/ocaml/threads/threads.cmxa /home/can/.opam/5.0.0/lib/lwt/unix/lwt_unix.cmxa -I /home/can/.opam/5.0.0/lib/lwt/unix /home/can/.opam/5.0.0/lib/caqti-lwt/caqti_lwt.cmxa /home/can/.opam/5.0.0/lib/cstruct/cstruct.cmxa -I /home/can/.opam/5.0.0/lib/cstruct /home/can/.opam/5.0.0/lib/base64/base64.cmxa /home/can/.opam/5.0.0/lib/hmap/hmap.cmxa /home/can/.opam/5.0.0/lib/dream-pure/dream_pure.cmxa /home/can/.opam/5.0.0/lib/eqaf/eqaf.cmxa /home/can/.opam/5.0.0/lib/eqaf/bigstring/eqaf_bigstring.cmxa /home/can/.opam/5.0.0/lib/eqaf/cstruct/eqaf_cstruct.cmxa /home/can/.opam/5.0.0/lib/mirage-crypto/mirage_crypto.cmxa -I /home/can/.opam/5.0.0/lib/mirage-crypto /home/can/.opam/5.0.0/lib/mirage-crypto-rng/mirage_crypto_rng.cmxa /home/can/.opam/5.0.0/lib/dream/cipher/dream__cipher.cmxa /home/can/.opam/5.0.0/lib/dream/graphiql/dream__graphiql.cmxa /home/can/.opam/5.0.0/lib/digestif/c/digestif_c.cmxa -I /home/can/.opam/5.0.0/lib/digestif/c /home/can/.opam/5.0.0/lib/fmt/fmt.cmxa /home/can/.opam/5.0.0/lib/magic-mime/magic_mime_library.cmxa /home/can/.opam/5.0.0/lib/mirage-clock/mirage_clock.cmxa /home/can/.opam/5.0.0/lib/ke/ke.cmxa /home/can/.opam/5.0.0/lib/uutf/uutf.cmxa /home/can/.opam/5.0.0/lib/unstrctrd/unstrctrd.cmxa /home/can/.opam/5.0.0/lib/unstrctrd/parser/unstrctrd_parser.cmxa /home/can/.opam/5.0.0/lib/base64/rfc2045/base64_rfc2045.cmxa /home/can/.opam/5.0.0/lib/bigarray-overlap/overlap.cmxa -I /home/can/.opam/5.0.0/lib/bigarray-overlap /home/can/.opam/5.0.0/lib/prettym/prettym.cmxa /home/can/.opam/5.0.0/lib/pecu/pecu.cmxa /home/can/.opam/5.0.0/lib/multipart_form/multipart_form.cmxa /home/can/.opam/5.0.0/lib/multipart_form-lwt/multipart_form_lwt.cmxa /home/can/.opam/5.0.0/lib/dream/server/dream__server.cmxa /home/can/.opam/5.0.0/lib/re/re.cmxa /home/can/.opam/5.0.0/lib/graphql_parser/graphql_parser.cmxa /home/can/.opam/5.0.0/lib/rresult/rresult.cmxa /home/can/.opam/5.0.0/lib/graphql/graphql.cmxa /home/can/.opam/5.0.0/lib/graphql-lwt/graphql_lwt.cmxa /home/can/.opam/5.0.0/lib/ocaml/str/str.cmxa /home/can/.opam/5.0.0/lib/dream/graphql/dream__graphql.cmxa /home/can/.opam/5.0.0/lib/dream/certificate/dream__certificate.cmxa /home/can/.opam/5.0.0/lib/faraday/faraday.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-gluten/dream_gluten.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-httpaf_/dream_httpaf_.cmxa /home/can/.opam/5.0.0/lib/result/result.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-websocketaf/dream_websocketaf.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream_httpaf.cmxa /home/can/.opam/5.0.0/lib/faraday-lwt/faraday_lwt.cmxa /home/can/.opam/5.0.0/lib/faraday-lwt-unix/faraday_lwt_unix.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-gluten-lwt/dream_gluten_lwt.cmxa /home/can/.opam/5.0.0/lib/ssl/ssl.cmxa -I /home/can/.opam/5.0.0/lib/ssl /home/can/.opam/5.0.0/lib/lwt_ssl/lwt_ssl.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-gluten-lwt-unix/dream_gluten_lwt_unix.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-hpack/dream_hpack.cmxa /home/can/.opam/5.0.0/lib/psq/psq.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-h2/dream_h2.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-h2-lwt/dream_h2_lwt.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-h2-lwt-unix/dream_h2_lwt_unix.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-httpaf_-lwt/dream_httpaf__lwt.cmxa /home/can/.opam/5.0.0/lib/dream-httpaf/dream-httpaf_-lwt-unix/dream_httpaf__lwt_unix.cmxa /home/can/.opam/5.0.0/lib/dream/http/dream__http.cmxa /home/can/.opam/5.0.0/lib/dream/unix/dream__unix.cmxa /home/can/.opam/5.0.0/lib/dream/sql/dream__sql.cmxa /home/can/.opam/5.0.0/lib/fmt/fmt_tty.cmxa /home/can/.opam/5.0.0/lib/mirage-crypto-rng/unix/mirage_crypto_rng_unix.cmxa -I /home/can/.opam/5.0.0/lib/mirage-crypto-rng/unix /home/can/.opam/5.0.0/lib/duration/duration.cmxa /home/can/.opam/5.0.0/lib/mtime/mtime.cmxa /home/can/.opam/5.0.0/lib/mtime/clock/os/mtime_clock.cmxa -I /home/can/.opam/5.0.0/lib/mtime/clock/os /home/can/.opam/5.0.0/lib/mirage-crypto-rng-lwt/mirage_crypto_rng_lwt.cmxa /home/can/.opam/5.0.0/lib/ptime/clock/os/ptime_clock.cmxa -I /home/can/.opam/5.0.0/lib/ptime/clock/os /home/can/.opam/5.0.0/lib/dream/dream.cmxa .hello.eobjs/native/dune__exe__Hello.cmx)
